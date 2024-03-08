@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    /* background: #f8f9fa; */
+    /* background-color: rgba(0, 0, 0, 0.61);
+    -webkit-backdrop-filter:blur(5px);
+    backdrop-filter: blur(5px); */
+    color: #eee7de;
+    background-image: url("http://www.internationalinside.com/wp-content/uploads/2016/05/Rome-Empire.jpg");
+    background-size: cover;
+
+
+}
+
+
+body {
+    font-family: "Gideon Roman", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    text-align: center;
+
+}
+
+.input-box {
+
+    /* Fallback color */
+    background-color: rgb(0, 0, 0);
+    /* Black w/opacity/see-through */
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #f1f1f1;
+
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 50px;
+}
+
+#inputArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+
+}
+
+input {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+    height: 1.5em;
+    border: 2px solid rgb(98, 81, 47);
+    /* border-radius: 20px; */
+}
+
+button {
+    width: 20%;
+    font-size: 1.5rem;
+    height: 1.5em;
+    border: 2px solid rgb(98, 81, 47);
+    border-radius: 30px;
+    color: rgb(98, 81, 47);
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.s;
+}
+
+button:hover {
+
+    box-shadow: 0px 0px 15px 4px rgba(98, 81, 47, .5);
+}
+
+button:active {
+    box-shadow: 0 5px rgb(98, 81, 47);
+    transform: translateY(4px);
+}
+
+#output {
+    margin: 50px;
+    font-size: 2rem;
+}
