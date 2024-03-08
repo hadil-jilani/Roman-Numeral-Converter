@@ -7,12 +7,12 @@ const convert = (n) => {
         X: 10,
         XL: 40,
         L: 50,
-        CX: 90,
+        XC: 90,
         C: 100,
         CD: 400,
         D: 500,
         CM: 900,
-        M: 1000
+        M: 1000,
     }
     const romKeys = Object.keys(romNum).sort((a, b) => romNum[b] - romNum[a])
     const romValues = Object.values(romNum).sort((a, b) => b - a)
@@ -38,13 +38,17 @@ const start = () => {
     let btn = document.getElementById('convert-btn')
     let number = document.getElementById('number')
 
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', () => {        
         let n = parseInt(number.value)
         if (n < 1) {
             showResult("Please enter a number greater than or equal to 1")
         }
         else if (n > 3999) {
             showResult("Please enter a number less than or equal to 3999")
+        }
+        else if(!number.value){
+            showResult("Please enter a valid number");
+            
         }
         else {
             let result = convert(n)
